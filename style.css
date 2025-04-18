@@ -1,0 +1,134 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fb;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #57585d;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Верхняя панель */
+.top_bar {
+    height: 60px;
+    background-color: #024b97;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Экраны */
+.screen {
+    display: none;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.screen.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Кнопки для экрана */
+.action_button {
+    background-color: #024b97;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action_button:hover {
+    background-color: #1a6bcb;
+}
+
+/* Нижняя панель */
+.bottom_bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.bottom_bar button {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #024b97;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom_bar button:hover {
+    color: #1a6bcb;
+}
+
+.bottom_bar i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Стиль контента для каждого экрана */
+.screen h2 {
+    color: #024b97;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.screen .content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #57585d;
+}
+
+.screen .content p {
+    margin-bottom: 15px;
+}
+
+.screen .content ul {
+    padding-left: 20px;
+}
+
+.screen .content ul li {
+    list-style: disc;
+    margin-bottom: 8px;
+}
+
+/* Стиль кнопок для экрана */
+.action_button {
+    display: block;
+    margin: 20px auto;
+    background-color: #024b97;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action_button:hover {
+    background-color: #1a6bcb;
+}
