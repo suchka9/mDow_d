@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mObywatel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Верхняя панель -->
+        <div class="top_bar">
+            <p class="top_title">mObywatel</p>
+        </div>
+
+        <!-- Экран "Pulpit" -->
+        <div id="screen_pulpit" class="screen active">
+            <h2>Pulpit</h2>
+            <div class="content">
+                <p>Witaj w aplikacji mObywatel. Tutaj możesz szybko sprawdzić stan swoich dokumentów, usług, kodów QR i innych informacji.</p>
+                <ul>
+                    <li>Sprawdź dokumenty</li>
+                    <li>Wygeneruj kod QR</li>
+                    <li>Zarządzaj ustawieniami konta</li>
+                </ul>
+            </div>
+            <button class="action_button">Sprawdź dokument</button>
+        </div>
+
+        <!-- Экран "Dokumenty" -->
+        <div id="screen_dokumenty" class="screen">
+            <h2>Dokumenty</h2>
+            <div class="content">
+                <p>W tej sekcji możesz dodać lub zarządzać swoimi dokumentami tożsamości, takimi jak dowód osobisty, paszport itp.</p>
+                <ul>
+                    <li>Dodaj nowy dokument</li>
+                    <li>Wyszukaj dokument</li>
+                    <li>Sprawdź status dokumentu</li>
+                </ul>
+            </div>
+            <button class="action_button">Dodaj dokument</button>
+        </div>
+
+        <!-- Экран "Usługi" -->
+        <div id="screen_uslugi" class="screen">
+            <h2>Usługi</h2>
+            <div class="content">
+                <p>Sprawdź dostępne usługi administracyjne, takie jak zamówienie odpisu aktu urodzenia, rejestracja pojazdów i inne.</p>
+                <ul>
+                    <li>Rejestracja pojazdu</li>
+                    <li>Sprawdzenie statusu usług</li>
+                    <li>Zamówienie odpisów</li>
+                </ul>
+            </div>
+            <button class="action_button">Zobacz dostępne</button>
+        </div>
+
+        <!-- Экран "Kod QR" -->
+        <div id="screen_kodqr" class="screen">
+            <h2>Kod QR</h2>
+            <div class="content">
+                <p>Generowanie kodu QR dla dokumentów tożsamości, które mogą być używane do szybszego dostępu lub weryfikacji w różnych usługach.</p>
+                <ul>
+                    <li>Wygeneruj nowy kod QR</li>
+                    <li>Zarządzaj swoimi kodami QR</li>
+                </ul>
+            </div>
+            <button class="action_button">Wygeneruj kod</button>
+        </div>
+
+        <!-- Экран "Więcej" -->
+        <div id="screen_wiecej" class="screen">
+            <h2>Więcej</h2>
+            <div class="content">
+                <p>W tej sekcji znajdziesz dodatkowe ustawienia i funkcje związane z Twoim kontem oraz aplikacją mObywatel.</p>
+                <ul>
+                    <li>Ustawienia konta</li>
+                    <li>Pomoc i wsparcie</li>
+                    <li>Informacje o aplikacji</li>
+                </ul>
+            </div>
+            <button class="action_button">Ustawienia</button>
+        </div>
+
+        <!-- Нижняя панель -->
+        <div class="bottom_bar">
+            <button onclick="switchScreen('pulpit')"><i class="fas fa-home"></i><br>Pulpit</button>
+            <button onclick="switchScreen('dokumenty')"><i class="fas fa-id-card"></i><br>Dokumenty</button>
+            <button onclick="switchScreen('uslugi')"><i class="fas fa-cogs"></i><br>Usługi</button>
+            <button onclick="switchScreen('kodqr')"><i class="fas fa-qrcode"></i><br>Kod QR</button>
+            <button onclick="switchScreen('wiecej')"><i class="fas fa-ellipsis-h"></i><br>Więcej</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
