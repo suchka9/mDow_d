@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mObywatel Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="profile-circle">MM</div>
+    <div class="notif-bell">🔔</div>
+  </header>
+
+  <main class="main-content">
+    <!-- Dokumenty -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Dokumenty</h2>
+        <div class="section-buttons">
+          <button class="btn">Dodaj</button>
+          <button class="btn">Wszystkie</button>
+        </div>
+      </div>
+      <div class="documents">
+        <div class="doc-card">
+          <img src="card-id.png" alt="mDowód" />
+          <p>mDowód</p>
+        </div>
+        <div class="doc-card">
+          <img src="card-driver.png" alt="Prawo jazdy" />
+          <p>Prawo jazdy</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usługi -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Usługi</h2>
+        <button class="btn">Wszystkie</button>
+      </div>
+      <div class="services-grid">
+        <div class="service">Punkty karne</div>
+        <div class="service">Naruszenie środowiskowe</div>
+        <div class="service">Bezpieczny autobus</div>
+        <div class="service">Polak za granicą</div>
+        <div class="service">Bilkom</div>
+        <div class="service">Zastrzeż PESEL</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Навигация -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active">Start</button>
+    <button class="nav-btn">Dokumenty</button>
+    <button class="nav-btn">Usługi</button>
+    <button class="nav-btn">Kod QR</button>
+    <button class="nav-btn">Więcej</button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
